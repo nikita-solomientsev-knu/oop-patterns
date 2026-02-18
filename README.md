@@ -1,1 +1,3 @@
-Hello world!
+- Install dotnet 
+- dotnet build
+- dotnet test
