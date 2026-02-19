@@ -3,16 +3,17 @@ using System.Collections.Generic;
 
 
 public class Message {
-    private string _receiver, _sender, _topic;
-    private string? _content;
-    private List<IAttachment>? _attachments;
+    private string _receiver, _sender, _topic, _content = "";
+    private List<IAttachment> _attachments = new List<IAttachment>();
 
     public Message(string receiver, string sender, string topic, string? content, List<IAttachment>? attachments) {
         _receiver = receiver;
         _sender = sender;
         _topic = topic;
-        _content = content;
-        _attachments = attachments;
+        _content = content == null? "": content;
+        if (attachments != null && attachments.Any()) {
+            _attachments.AddRange(attachments);
+        }
     }
 
     public (bool IsSuccessful, string? Err) Send() {

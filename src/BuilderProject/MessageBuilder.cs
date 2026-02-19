@@ -3,8 +3,9 @@ using System.Collections.Generic;
 
 
 public class MessageBuilder {
-    private string? _receiver = null, _sender = null, _topic = null, _content = null;
-    private List<IAttachment> _attachments;
+    private string? _receiver = null, _sender = null, _topic = null;
+    private string _content = "";
+    private List<IAttachment> _attachments = new List<IAttachment>();
 
     public MessageBuilder Receiver(string value) {
         _receiver = value;
