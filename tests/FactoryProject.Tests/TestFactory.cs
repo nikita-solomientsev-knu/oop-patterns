@@ -10,7 +10,7 @@ public class TestFactory {
     [InlineData("mp3", FileType.MP3)]
     public void TestFactoryProducedExtensions(string expectedExtension, FileType correspondingFileType) {
         FileFactory fileFactory = new FileFactory();
-        IFile file = fileFactory.CreateFile("dummy", correspondingFileType);
-        Assert.Equal(file.GetExtension(), expectedExtension);
+        IFile? file = fileFactory.CreateFile("dummy", correspondingFileType);
+        Assert.Equal(file?.GetExtension(), expectedExtension);
     }
 }
