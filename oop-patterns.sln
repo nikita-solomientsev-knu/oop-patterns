@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{ACA28CE0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryProject.Tests", "tests\FactoryProject.Tests\FactoryProject.Tests.csproj", "{F12810DB-2EF1-4473-8295-263E875DEA1C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderProject", "src\BuilderProject\BuilderProject.csproj", "{AAF40D99-F6EA-4A46-84E3-FCD720AACE9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderProject.Tests", "tests\BuilderProject.Tests\BuilderProject.Tests.csproj", "{576DC5AE-EE95-4051-BEA2-93BF27F633A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,9 +32,19 @@ Global
 		{F12810DB-2EF1-4473-8295-263E875DEA1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F12810DB-2EF1-4473-8295-263E875DEA1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F12810DB-2EF1-4473-8295-263E875DEA1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAF40D99-F6EA-4A46-84E3-FCD720AACE9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAF40D99-F6EA-4A46-84E3-FCD720AACE9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAF40D99-F6EA-4A46-84E3-FCD720AACE9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAF40D99-F6EA-4A46-84E3-FCD720AACE9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{576DC5AE-EE95-4051-BEA2-93BF27F633A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{576DC5AE-EE95-4051-BEA2-93BF27F633A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{576DC5AE-EE95-4051-BEA2-93BF27F633A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{576DC5AE-EE95-4051-BEA2-93BF27F633A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D6E03958-8E2A-454C-8499-9D485B740B37} = {67E0B923-E90B-4E4B-A28A-614174E65768}
 		{F12810DB-2EF1-4473-8295-263E875DEA1C} = {ACA28CE0-263D-4E2B-BC79-E3F092A808A1}
+		{AAF40D99-F6EA-4A46-84E3-FCD720AACE9F} = {67E0B923-E90B-4E4B-A28A-614174E65768}
+		{576DC5AE-EE95-4051-BEA2-93BF27F633A0} = {ACA28CE0-263D-4E2B-BC79-E3F092A808A1}
 	EndGlobalSection
 EndGlobal

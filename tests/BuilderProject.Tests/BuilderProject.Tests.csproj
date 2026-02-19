@@ -22,4 +22,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\BuilderProject\BuilderProject.csproj" />
+  </ItemGroup>
+
 </Project>
