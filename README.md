@@ -28,3 +28,15 @@ Build docker image with the following command:
 ```
 docker build -t oop-patterns:0.1.0 .
 ```
+
+
+### New project creation
+Create a new project, add unit tests and set up the solution file and a project reference
+```
+dotnet new classlib -n NewProject
+dotnet new xunit -n NewProject.Tests
+dotnet sln add NewProject/NewProject.csproj
+dotnet sln add NewProject.Tests/NewProject.Tests.csproj
+dotnet add NewProject.Tests/NewProject.Tests.csproj reference NewProject/NewProject.csproj
+```
+
