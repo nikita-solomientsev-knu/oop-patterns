@@ -14,6 +14,7 @@ public class TestSingleton {
     public void TestServiceStatus() {
         Thread workThread = new Thread(() => Service.GetInstance().DoWork("Performing heavy operations"));
         workThread.Start();
+        Thread.Sleep(500);
         Assert.Equal("Working", Service.GetInstance().GetStatus());
         Assert.True(workThread.Join(2500));
         Assert.Equal("Idle", Service.GetInstance().GetStatus());

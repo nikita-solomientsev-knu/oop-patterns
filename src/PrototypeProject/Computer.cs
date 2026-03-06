@@ -70,4 +70,10 @@ public class Computer: ICopy<Computer> {
             
         };
     }
+    public static Computer GamingPrototype() {
+        Computer gamingComputer = Computer.Prototype().Copy();
+        gamingComputer.Gpu.Manufacturer = "Nvidia";
+        gamingComputer.Gpu.Model = "GeForce RTX5090";
+        return gamingComputer;
+    }
 }

@@ -9,11 +9,8 @@ public class TestPrototype {
         Computer computerPrototype = Computer.Prototype();
         Console.WriteLine($"Prototype computer:\n{computerPrototype}");
         
-        Computer gamingComputer = computerPrototype.Copy();
-        
-
-        gamingComputer.Gpu.Manufacturer = "Nvidia";
-        gamingComputer.Gpu.Model = "GeForce RTX5090";
+        Computer gamingComputer = Computer.GamingPrototype();
+        gamingComputer.Ram.Volume = 32;
         Console.WriteLine($"Gaming PC:\n{gamingComputer}");
 
         Computer officeComputer = computerPrototype.Copy();
