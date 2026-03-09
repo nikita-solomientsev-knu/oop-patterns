@@ -1,8 +1,8 @@
 namespace AdapterProject {
 
     public class SmsSender {
-        public string SendSms(string recipient, string message) {
-            Console.WriteLine($"Sms is sent: {recipient} <- {message}");
+        public string SendSms(string message, string phoneNumber) {
+            Console.WriteLine($"Sms is sent: {phoneNumber} <- {message}");
             return "Success";
         }
     }
@@ -11,7 +11,7 @@ namespace AdapterProject {
         private readonly SmsSender _smsSender = new SmsSender();
 
         public override bool Send(string message, string recipient) {
-            return _smsSender.SendSms(recipient, message) == "Success";
+            return _smsSender.SendSms(message, recipient) == "Success";
         }
     }
 }
