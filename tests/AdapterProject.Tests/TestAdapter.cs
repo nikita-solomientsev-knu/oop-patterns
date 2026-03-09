@@ -9,8 +9,8 @@ public class TestAdapter {
         Sender smsSender = new SmsSenderAdapter();
         Sender telegramSender = new TelegramSenderAdapter();
         
-        Assert.True(messageSender.Send("Lior", "Shalom lekulam!"));
-        Assert.True(smsSender.Send("Ofer", "Ma nishma? Eich avar rosh hashanah?"));
-        Assert.True(telegramSender.Send("Gili", "Kol tov!"));
+        Assert.True(messageSender.Send("Shalom lekulam!", "Lior"));
+        Assert.True(smsSender.Send("Ma nishma? Eich avar rosh hashanah?", "Ofer"));
+        Assert.True(telegramSender.Send("Kol tov!", "Gili"));
     }
 }
