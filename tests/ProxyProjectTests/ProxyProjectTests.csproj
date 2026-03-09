@@ -20,6 +20,11 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+
+    <None Include="index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+
   </ItemGroup>
 
   <ItemGroup>
