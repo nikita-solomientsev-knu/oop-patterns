@@ -1,5 +1,3 @@
-
-
 namespace DecoratorProject {
     abstract public class IceCreamDecorator: IIceCream {
         private IIceCream _iceCreamInstance;
