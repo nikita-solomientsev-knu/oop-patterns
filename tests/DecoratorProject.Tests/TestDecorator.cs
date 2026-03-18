@@ -24,7 +24,6 @@ public class TestDecorator {
     }
 
     [Fact]
-
     public void TestNestedDecorators() {
         CreamyIceCreamDecorator creamyDecorator = new CreamyIceCreamDecorator();
         SweetIceCreamDecorator sweetDecorator = new SweetIceCreamDecorator();
