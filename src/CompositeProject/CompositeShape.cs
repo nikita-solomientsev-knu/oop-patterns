@@ -1,16 +1,19 @@
 namespace CompositeProject;
 
+using System.Collections.Generic;
+
 
 public class CompositeShape: IShape {
-    private ArrayList _shapes = new ArrayList();
+    private List<IShape> _shapes = new List<IShape>();
     private string _name;
 
-    CompositeShape(string name) {
-        _name = name;   
+    public CompositeShape(string name, List<IShape> shapes) {
+        _name = name;
+        _shapes.AddRange(shapes);
     }
 
-    public ArrayList GetPrimitivesNames() {
-        ArrayList primitives = new ArrayList {_name};
+    public List<string> GetPrimitivesNames() {
+        List<string> primitives = new List<string> {_name};
         foreach (IShape shape in _shapes) {
             primitives.AddRange(shape.GetPrimitivesNames());
         }

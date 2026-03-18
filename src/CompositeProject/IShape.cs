@@ -1,6 +1,7 @@
-namespace IShape;
+namespace CompositeProject;
 
+using System.Collections.Generic;
 
 public interface IShape {
-    public abstract ArrayList GetPrimitivesNames();
+    public abstract List<string> GetPrimitivesNames();
 }
