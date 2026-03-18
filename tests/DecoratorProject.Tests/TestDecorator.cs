@@ -22,4 +22,19 @@ public class TestDecorator {
         Console.WriteLine($"Asserting {actualDescription} equals {expectedDescription}");
         Assert.Equal(actualDescription, expectedDescription);
     }
+
+    [Fact]
+
+    public void TestNestedDecorators() {
+        CreamyIceCreamDecorator creamyDecorator = new CreamyIceCreamDecorator();
+        SweetIceCreamDecorator sweetDecorator = new SweetIceCreamDecorator();
+        IceCream smallIceCream = new IceCream("small");
+
+        creamyDecorator.SetIceCream(smallIceCream);
+        sweetDecorator.SetIceCream(creamyDecorator);
+        string actualDescription = sweetDecorator.GetDescription();
+        string expectedDescription = "Sweet Creamy Ice cream size: small";
+        Console.WriteLine($"Asserting {actualDescription} equals {expectedDescription}");
+        Assert.Equal(actualDescription, expectedDescription);
+    }
 }
