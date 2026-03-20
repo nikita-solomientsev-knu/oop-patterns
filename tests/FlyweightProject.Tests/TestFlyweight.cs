@@ -26,5 +26,6 @@ public class TestFlyweight {
         Assert.Equal(book1.ToString(), "Title: Clean Code, Author: Robert Martin, Year: 2020, Revision: 1");
         Assert.Equal(book2.ToString(), "Title: Clean Code, Author: Robert Martin, Year: 2021, Revision: 2");
         Assert.Equal(book3.ToString(), "Title: Design Patterns, Author: Gang of Four, Year: 2018, Revision: 1");
+        Assert.True(Object.ReferenceEquals(book1.Flyweight, book2.Flyweight));
     }
 }
