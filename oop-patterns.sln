@@ -47,6 +47,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyweightProject", "src\Fly
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlyweightProject.Tests", "tests\FlyweightProject.Tests\FlyweightProject.Tests.csproj", "{1C855739-1286-4706-9B1B-9C4503A90253}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsibilityProject", "src\ChainOfResponsibilityProject\ChainOfResponsibilityProject.csproj", "{474E3C5C-9BFC-4FC4-890E-DE19727E37E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsibilityProject.Tests", "tests\ChainOfResponsibilityProject.Tests\ChainOfResponsibilityProject.Tests.csproj", "{B23B84DC-F341-4895-82F3-C84628DD0306}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -136,6 +140,14 @@ Global
 		{1C855739-1286-4706-9B1B-9C4503A90253}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C855739-1286-4706-9B1B-9C4503A90253}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C855739-1286-4706-9B1B-9C4503A90253}.Release|Any CPU.Build.0 = Release|Any CPU
+		{474E3C5C-9BFC-4FC4-890E-DE19727E37E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{474E3C5C-9BFC-4FC4-890E-DE19727E37E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{474E3C5C-9BFC-4FC4-890E-DE19727E37E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{474E3C5C-9BFC-4FC4-890E-DE19727E37E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B23B84DC-F341-4895-82F3-C84628DD0306}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B23B84DC-F341-4895-82F3-C84628DD0306}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B23B84DC-F341-4895-82F3-C84628DD0306}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B23B84DC-F341-4895-82F3-C84628DD0306}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D6E03958-8E2A-454C-8499-9D485B740B37} = {67E0B923-E90B-4E4B-A28A-614174E65768}
@@ -158,5 +170,7 @@ Global
 		{BFCB7293-2336-473D-BE5D-651800F88AD2} = {ACA28CE0-263D-4E2B-BC79-E3F092A808A1}
 		{A61787E6-78D1-4DC3-A455-19CF41194833} = {67E0B923-E90B-4E4B-A28A-614174E65768}
 		{1C855739-1286-4706-9B1B-9C4503A90253} = {ACA28CE0-263D-4E2B-BC79-E3F092A808A1}
+		{474E3C5C-9BFC-4FC4-890E-DE19727E37E6} = {67E0B923-E90B-4E4B-A28A-614174E65768}
+		{B23B84DC-F341-4895-82F3-C84628DD0306} = {ACA28CE0-263D-4E2B-BC79-E3F092A808A1}
 	EndGlobalSection
 EndGlobal
