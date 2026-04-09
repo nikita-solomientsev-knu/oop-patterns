@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 // Receiver
 namespace CommandProject {
-    class TextEditor {
+    public class TextEditor {
         public string Text { get; private set; } = "";
 
         public void Insert(string text) {
@@ -20,12 +20,12 @@ namespace CommandProject {
         }
     }
 
-    interface ICommand {
+    public interface ICommand {
         void Execute();
         void Undo();
     }
 
-    class InsertCommand : ICommand {
+    public class InsertCommand : ICommand {
         private TextEditor _editor;
         private string _text;
 
@@ -43,7 +43,7 @@ namespace CommandProject {
         }
     }
 
-    class DeleteCommand : ICommand
+    public class DeleteCommand : ICommand
     {
         private TextEditor _editor;
         private string _deletedText;
@@ -64,7 +64,7 @@ namespace CommandProject {
         }
     }
 
-    class EditorInvoker
+    public class EditorInvoker
     {
         private Stack<ICommand> _history = new Stack<ICommand>();
 

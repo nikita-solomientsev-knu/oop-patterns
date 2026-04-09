@@ -1,5 +1,7 @@
 namespace CommandProject.Tests;
 
+using CommandProject;
+
 public class TestEditor {
     
     [Fact]
@@ -10,20 +12,20 @@ public class TestEditor {
         invoker.ExecuteCommand(new InsertCommand(editor, "Hello "));
         invoker.ExecuteCommand(new InsertCommand(editor, "World"));
         
-        Assert.Equal(editor.Text, "Hello World");
+        Assert.Equal("Hello World", editor.Text);
         Console.WriteLine(editor.Text);
 
         invoker.ExecuteCommand(new DeleteCommand(editor, 5));
         
-        Assert.Equal(editor.Text, "Hello");
+        Assert.Equal("Hello", editor.Text);
         Console.WriteLine(editor.Text);
 
         invoker.Undo();
-        Assert.Equal(editor.Text, "Hello World");
+        Assert.Equal("Hello World", editor.Text);
         Console.WriteLine(editor.Text);
 
         invoker.Undo();
-        Assert.Equal(editor.Text, "Hello");
+        Assert.Equal("Hello", editor.Text);
         Console.WriteLine(editor.Text);
     }
 }
