@@ -35,11 +35,11 @@ namespace CommandProject {
         }
 
         public void Execute() {
-            _editor.Insert(text);
+            _editor.Insert(_text);
         }
 
         public void Undo() {
-            _editor.Delete(text.Length);
+            _editor.Delete(_text.Length);
         }
     }
 
@@ -74,9 +74,9 @@ namespace CommandProject {
         }
 
         public void Undo() {
-            if (history.Count > 0)
+            if (_history.Count > 0)
             {
-                ICommand command = history.Pop();
+                ICommand command = _history.Pop();
                 command.Undo();
             }
         }
