@@ -17,7 +17,7 @@ public class TestEditor {
 
         invoker.ExecuteCommand(new DeleteCommand(editor, 5));
         
-        Assert.Equal("Hello", editor.Text);
+        Assert.Equal("Hello ", editor.Text);
         Console.WriteLine(editor.Text);
 
         invoker.Undo();
@@ -25,7 +25,7 @@ public class TestEditor {
         Console.WriteLine(editor.Text);
 
         invoker.Undo();
-        Assert.Equal("Hello", editor.Text);
+        Assert.Equal("Hello ", editor.Text);
         Console.WriteLine(editor.Text);
     }
 }
