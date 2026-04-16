@@ -3,7 +3,6 @@
 using System;
 using System.Collections.Generic;
 
-// Receiver
 namespace CommandProject {
     public class TextEditor {
         public string Text { get; private set; } = "";
