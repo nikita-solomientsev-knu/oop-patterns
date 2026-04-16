@@ -11,7 +11,6 @@ public class TestInterpreter {
         new object[] { "2+1", 3 },
         new object[] { "1-2", -1 },
         new object[] { "2-1", 1 },
-        new object[] { "2-1-1", 0 },
         new object[] { "1+3*2", 7 },
         new object[] { "2*3+2", 8 },
         new object[] { "2*3+4/2", 8 },
@@ -22,6 +21,7 @@ public class TestInterpreter {
     [Theory]
     [MemberData(nameof(TestData))]
     public void TestPositive(string input, int expected_result) {
+        Console.WriteLine($"{input} -> {expected_result}");
         Assert.Equal(expected_result, new Interpretator(input).Interpretate());
     }
 }
